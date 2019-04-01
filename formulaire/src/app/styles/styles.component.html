@@ -1,0 +1,15 @@
+<h4>Formulaire: Style</h4>
+<form (ngSubmit)="handleSubmit()" [formGroup]="userForm">
+  <div>
+    <label>Email: </label>
+    <input [formControl]="emailCtrl" [(ngModel)]="user.email" class="input-angular">
+  </div>
+  <div>
+    <label>Password: </label>
+    <input type="text" [formControl]="passwordCtrl" [(ngModel)]="user.password">
+  </div>
+  <button type="submit" [disabled]="userForm.invalid">Login
+  </button>
+  <button type="reset" (click)="handleClear()">Clear
+  </button>
+</form>

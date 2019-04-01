@@ -1,0 +1,12 @@
+.input-angular {
+background-color: rgba(205, 208, 214, 0.56);
+color: #3e3c3c;
+}
+.input-angular.ng-invalid.ng-dirty {
+border: 2px red solid;
+border-radius: 2px;
+}
+.input-angular.ng-valid.ng-dirty {
+    border: 2px rgb(123, 255, 0) solid;
+    border-radius: 2px;
+    }
